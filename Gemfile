@@ -46,3 +46,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# getting this error Expected string default value for '--jbuilder'; got true (boolean)
+# fix is to downgrade thor
+gem 'thor', '0.19.1'
