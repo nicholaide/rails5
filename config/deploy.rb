@@ -19,9 +19,10 @@ domain = 'rails-dev-box-deploy'
 
 # name of your application
 set :application, 'rails5'
+set :git_repo
 
 # file paths
-set :repo_url, "#{user}@#{domain}:git/#{fetch(:application)}.git" 
+set :repo_url, "#{user}@#{domain}:git/#{fetch(:git_repo)}.git" 
 set :deploy_to, "/vagrant/#{fetch(:application)}" 
 
 # distribute your applications across servers (the instructions below put them
