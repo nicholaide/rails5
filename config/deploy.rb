@@ -18,7 +18,7 @@ domain = 'rails-dev-box-deploy'
 #set :rvm_ruby_string, 'ruby-2.3.1'
 
 # name of your application
-set :application, 'depot'
+set :application, 'rails5'
 
 # file paths
 set :repo_url, "#{user}@#{domain}:git/#{fetch(:application)}.git" 
